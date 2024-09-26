@@ -1,0 +1,11 @@
+apiVersion: skaffold/v4beta11
+kind: Config
+metadata:
+  name: spotify-release-radar
+build:
+  artifacts:
+    - image: spotify-release-radar
+      ko: {}
+manifests:
+  rawYaml:
+    - install/deployment.yaml
